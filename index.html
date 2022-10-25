@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>Ederlan Augusto de Souza</title>
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class=" nav bd-container">
+      <a href="" class="nav__logo">Ederlan</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class='bx bx-home nav__icon'>Home</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class='bx bx-user nav__icon'>Profile</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class='bx bx-book nav__icon'>Education</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class='bx bx-receipt nav__icon'>Skills</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class='bx bx-briefcase-alt nav__icon'>Experience</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">
+              <i class='bx bx-award nav__icon'>Certificates</i>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#references" class="nav__link">
+              <i class='bx bx-link-external nav__icon'>References</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home_container section bd-grid">
+            <div class="home__data ">
+              <div class="home__profile">
+                <img src="./assets/img/perfil.png" alt="" class="home__img">
+                <h1 class="home__title"><b>EDERLAN AUGUSTO</b></h1>
+                <h3 class="home__profession">Full Stack developer</h3>
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i>Goiás/Brazil
+                </span>
+              </div>
+              <div class="home_address">
+                <h2 class="section-title">CONTACT INFO</h2>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                    <a href="mailto:Ederlanaugusto@gmail.com" class="email">Ederlanaugusto@gmail.com</a>  
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+          <!-- Button to generate and download the pdf. Available for desktop. -->
+          <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+
+
+        </section>
+
+        <!--========== SOCIAL ==========-->
+        <section class="social section">
+          <h2 class="section-title">SOCIAL</h2>
+          <div class="social__container bd-grid">
+            <a href="https://www.linkedin.com/in/ederlan-augusto-b102571a0/" target="_blank" title="Linkedin" class="social__link">
+              <i class="bx bxl-linkedin-square social__icon"></i>
+            </a>
+
+            <a href="https://github.com/ederlanaugusto" target="_blank"  title="GitHub" class="social__link">
+              <i class='bx bxl-github social__icon'></i>
+            </a>
+
+            <a href="https://www.instagram.com/ederlanaugusto/" target="_blank" title="Instagram" class="social__link">
+              <i class="bx bxl-instagram-alt social__icon"></i>
+            </a>
+          </div>
+        </section>
+
+
+        <!--========== EDUCATION ==========-->
+        <section class="education section" id="education">
+          <h2 class="section-title">Education</h2>
+          <ul>
+            <li>
+              <h5>2000 - 2004</h5>
+              <h4>Bachelor Degree in computer science</h4>
+              <h4>Objective college of Goiânia</h4>
+            </li>
+          </ul>
+        </section>
+
+        <!--========== CERTIFICATES ==========-->
+        <section class="certificate section" id="certificates">
+          <h2 class="section-title">CERTIFICATES</h2>
+          <ul class="certificate__data">
+            <li class="certificate__name" onClick="showImage(1);">
+              <span class="certificate__circle "></span>
+              Scrum Fundaments
+            </li>
+            <li class="certificate__name" onClick="showImage(2);"">
+              <span class="certificate__circle"></span>
+              Fundamentals Web
+            </li>
+            <li class="certificate__name" onClick="showImage(3);"">
+                <span class="certificate__circle"></span>
+                Advanced Web
+            </li>
+            <li class="certificate__name" onClick="showCarrossel();">
+              <span class="certificate__circle"></span>
+              Others
+            </li>
+          </ul>
+        </section>
+        <!--========== LANGUAGES ==========-->
+        <section class="languages section">
+          <div class="contactInfo language">
+            <h2 class="section-title">LANGUAGES</h2>
+            <ul>
+              <li>
+                <span class="text">Portuguese</span>
+                <span class="percent">
+                  <div style="width:100%"></div>
+                </span>
+              </li>
+              <li>
+                <span class="text">English</span>
+                <span class="percent">
+                  <div style="width:20%"></div>
+                </span>
+              </li>
+              <li>
+                <span class="text">Spanish</span>
+                <span class="percent">
+                  <div style="width:60%"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="resume__right">
+        <!--========== PROFILE ==========-->
+        <section class="profile section" id="profile">
+          <h2 class="section-titleB">PROFILE</h2>
+          <p class="profile__description">I'm a full stack developer,
+            I started in the area in 1992, worked on several projects,
+            with multiple teams, and have used multiple tools and technologies over the years,
+            and I can say that the satisfaction of overcoming challenges
+            and impacting people's lives in this process is unique.</p>
+        </section>
+
+        <!--========== EXPERIENCE ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-titleB">EXPERIENCE</h2>
+          <div class="box">
+            <div class="year_company">
+              <h5>2020 - Present</h5>
+              <h5>INDRA BRASIL SOLUTIONS AND SERV. TECHNOLOGY S/A</h5>
+            </div>
+            <div class="text">
+              <h4>Senior Analyst/Developer</h4>
+              <p>
+                Analysis and development of systems (Web and DeskTop) in the Government area
+                (Court of Auditors of the State of Goiás).  
+              </p>
+              <p>
+                Tools and technologies used: Visual Studio 2019, .NET C#, Oracle, WEB API, Redmine, Scrum,
+                Integration with Microsoft Word 2016 package, SOAP, QLINK Sense, Eclipse jee, Java, 
+                Python, Jupyter Notebook, Apache Ambari, Hadoop, Elasticsearch.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>2006 - 2016</h5>
+              <h5>SINTESIS SPECIAL PROJECTS LTDA</h5>
+            </div>
+            <div class="text">
+              <h4>Senior Analyst/Developer</h4>
+              <p>
+                Analysis and development of systems (Web and DeskTop) in the Government area
+                (Court of Auditors of the State of Goiás).
+              </p>
+              <p>
+                Tools and technologies used: Visual Studio 2017, .NET C# WinForm, Oracle, WEB API, Redmine, Scrum,
+                Integration with Microsoft Word 2010 package, SOAP, QLINK Sense, Adobe Flex,
+                Asp, WPF, Oracle, Visual Basic 6, Crystal Report.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year_company">
+              <h5>1982 - 2016</h5>
+              <h5>Treasury Department - SEFAZ-GO</h5>
+            </div>
+            <div class="text">
+              <h4>Analyst/Developer</h4>
+              <p>
+                Analysis and development of systems (Web and DeskTop) in the Government area
+                (Court of Auditors of the State of Goiás).
+              </p>
+              <p>
+                Tools and technologies used: ASP e HTML, Visual Basic 6, Crystal Report,
+                System Architect, ORACLE, DB2, SQL-SERVER,Entire-X, Natural, ADABAS, Broker.
+              </p>
+            </div>
+          </div>
+
+        </section>
+        <!--========== REFERENCES ==========-->
+        <!-- <section class="references section" id="references">
+                        
+                      </section> -->
+
+        <!--========== SKILLS  ==========-->
+        <section class="skills section" id="skills">
+          <h2 class="section-titleB">Skills</h2>
+          <div class="box">
+            <h4>Html</h4>
+            <span class="percent">
+              <div style="width: 90%;"></div>
+            </span>
+          </div>
+          <div class="box">
+            <h4>CSS</h4>
+            <span class="percent">
+              <div style="width: 65%;"></div>
+            </span>
+          </div>
+          <div class="box">
+            <h4>Javascript</h4>
+            <span class="percent">
+              <div style="width: 50%;"></div>
+            </span>
+          </div>
+          <div class="box">
+            <h4>ReactJS</h4>
+            <span class="percent">
+              <div style="width: 45%;"></div>
+            </span>
+          </div>
+          <div class="box">
+            <h4>NodeJS</h4>
+            <span class="percent">
+              <div style="width: 45%;"></div>
+            </span>
+          </div>          
+          <div class="box">
+            <h4>.Net</h4>
+            <span class="percent">
+              <div style="width: 92%;"></div>
+            </span>
+          </div>
+          <div class="box">
+            <h4>Oracle</h4>
+            <span class="percent">
+              <div style="width: 85%;"></div>
+            </span>
+          </div>
+        </section>
+
+        <!--========== INTERESTS ==========-->
+        <section class="interests section">
+          <h2 class="section-titleB">Interest</h2>
+          <div class="interest">
+            <ul>
+              <li><i class="bx bxs-plane-alt" aria-hidden="true"></i> Travells</li>
+              <li><i class="bx bx-book" aria-hidden="true"></i> Read</li>
+              <li><i class="bx bx-headphone" aria-hidden="true"></i> Music</li>
+              <li><i class="bx bx-joystick-alt" aria-hidden="true"></i> Games</li>
+              <li><i class="bx bx-football" aria-hidden="true"></i> Soccer</li>
+              <li><i class="bx bx-dumbbell" aria-hidden="true"></i> Fitness</li>
+              <li><i class="bx bxs-pizza" aria-hidden="true"></i> Food</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal" >
+        <img class="img_modal" id="img1"></img>
+      </div>
+    </div>
+    <div class="image-view"></div>
+    <div class="image-box">
+      <div id="prev-btn"></div>
+      <div id="next-btn"></div>
+    </div>
+  </main>
+
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+  </a>
+
+  <!--========== HTML2PDF ==========-->
+  <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
