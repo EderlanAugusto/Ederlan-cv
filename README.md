@@ -15,7 +15,7 @@ My curriculum in Html and CSS, responsive with dark mode and gallery pictures.
 
 # Demo
 
-https://ederlanaugusto.github.io/
+https://ederlanaugusto.github.io/Ederlan-cv/
 
 # Clone project
 ```sh
